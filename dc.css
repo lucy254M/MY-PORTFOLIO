@@ -1,0 +1,89 @@
+.tabs{
+	background-color: yellowgreen;
+	color: black;
+	font-size: 20px;
+	font-family: sans-serif;
+	font-weight: 15px;
+	padding: 10px;
+	padding-left: 20px;
+	float: center;
+	display: block;
+}
+.tabs a{
+	color: whitesmoke;
+	padding-left: 50px;
+	text-align: center;
+
+}
+.activity1 p{
+	background-color: brown;
+	font-weight: 16px;
+	font-size: 20px;
+	 padding: 25px 30px 30px 25px;
+	 float: left;
+
+
+}
+.activity :after p{
+	background-color: brown;
+	font-weight: 16px;
+	font-size: 20px;
+	 padding: 25px 30px 30px 25px;
+	 display: table;
+	 content: "";
+	 display: flex;
+
+	}
+body{
+	background-color: green;
+}
+.images{
+	
+  float: initial;
+  width: 7.33%;
+  padding:33px;
+}
+.images1::after {
+  content: "";
+  clear: both;
+  display:contents;
+  display: flex;
+
+}
+.images1 {
+  display: flex;
+  padding-left: 20px;
+}
+/*about images*/
+.images {
+  flex: 10.33%;
+  padding: 10px;
+}
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 18%;
+  padding: 0 8px;
+  
+}
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 7px;
+  text-align: center;
+  background-color: yellowgreen;
+}
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
